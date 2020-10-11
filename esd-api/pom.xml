@@ -11,7 +11,7 @@
 	<groupId>com.rjohnson19</groupId>
 	<artifactId>esd-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Enteprise Security Dashboard API</name>
+	<name>Enterprise Security Dashboard API</name>
 	<description>API backend for Enterprise Security Dashboard</description>
 
 	<properties>
