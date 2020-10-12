@@ -1,6 +1,6 @@
 package com.rjohnson19.esdapi.feed;
 
-import com.rometools.rome.feed.synd.SyndFeed;
+import com.rjohnson19.esdapi.feed.dto.FeedDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +26,7 @@ public class RSSFeedReaderTest {
         final URL vmwareTanzuParsedFeed = getClass().getResource(VMWARE_TANZU_PARSED_RSS_XML);
         assertNotNull("Feed missing from classpath!", vmwareTanzuParsedFeed);
 
-        final SyndFeed feed = rssFeedReader.read(vmwareTanzuParsedFeed);
+        final FeedDTO feed = rssFeedReader.read(vmwareTanzuParsedFeed);
         assertNotNull("Feed should not be null", feed);
         LOG.info("Parsed feed: {}", feed);
     }
