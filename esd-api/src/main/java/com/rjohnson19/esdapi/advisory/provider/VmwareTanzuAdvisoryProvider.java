@@ -2,6 +2,7 @@ package com.rjohnson19.esdapi.advisory.provider;
 
 import com.rjohnson19.esdapi.Constants;
 import com.rjohnson19.esdapi.advisory.entity.AdvisoryListItem;
+import com.rjohnson19.esdapi.advisory.service.AdvisoryService;
 import com.rjohnson19.esdapi.feed.RSSFeedReader;
 import com.rjohnson19.esdapi.feed.dto.FeedEntry;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +23,15 @@ public class VmwareTanzuAdvisoryProvider extends AbstractRemoteFeedAdvisoryProvi
     /**
      * Constructor.
      * @param rssFeedReader RSSFeedReader
+     * @param advisoryService AdvisoryService.
      * @param remoteUrl remoteUrl
      */
     public VmwareTanzuAdvisoryProvider(@Autowired final RSSFeedReader rssFeedReader,
+                                       @Autowired final AdvisoryService advisoryService,
                                        @Value("${feeds.vmware-tanzu.remoteurl}") final String remoteUrl) {
         super(rssFeedReader);
         this.remoteUrl = remoteUrl;
+        advisoryService.registerProvider(this);
     }
     private final String remoteUrl;
     @Override
