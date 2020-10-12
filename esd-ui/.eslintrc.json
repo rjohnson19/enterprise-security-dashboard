@@ -20,6 +20,11 @@
         "react",
         "@typescript-eslint"
     ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "rules": {
         // not needed with next.js?
         "react/react-in-jsx-scope": "off",
