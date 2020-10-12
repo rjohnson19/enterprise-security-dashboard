@@ -1,5 +1,5 @@
-# This workflow will build a Java project with Maven
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+# Builds Backend with Maven
+# Checks with supported OpenJDK versions, currently 8 and 11.
 
 name: Backend CI
 
@@ -13,12 +13,14 @@ jobs:
   build:
 
     runs-on: ubuntu-18.04
-
+    strategy:
+      matrix:
+        java: [ '8.0.265', '11.0.4' ]
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 8.0u265
+    - name: Set up JDK
       uses: actions/setup-java@v1
       with:
-        java-version: 8.0.265
+        java-version: ${{ matrix.java }}
     - name: Build with Maven
       run: mvn -B package --file esd-api/pom.xml
