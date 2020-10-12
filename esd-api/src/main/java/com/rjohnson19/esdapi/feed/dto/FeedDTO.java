@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 public class FeedDTO {
-    String title;
-    Date publishedDate;
-    List<FeedEntry> entries;
+    private String title;
+    private Date publishedDate;
+    private List<FeedEntry> entries;
 }

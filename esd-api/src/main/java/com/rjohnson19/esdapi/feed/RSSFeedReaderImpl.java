@@ -24,10 +24,10 @@ public class RSSFeedReaderImpl implements RSSFeedReader {
     public static final String EMPTY_STRING = "";
 
     @Override
-    public FeedDTO read(final @NonNull URL feedUrl) {
+    public final FeedDTO read(final @NonNull URL feedUrl) {
         LOG.trace("Reading from {}", feedUrl);
         final SyndFeedInput input = new SyndFeedInput();
-        try (final XmlReader xmlReader = new XmlReader(feedUrl)) {
+        try (XmlReader xmlReader = new XmlReader(feedUrl)) {
             return toFeedDTO(input.build(xmlReader));
         } catch (FeedException e) {
             LOG.error("Failed to parse feed from " + feedUrl, e);
