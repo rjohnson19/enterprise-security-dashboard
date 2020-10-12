@@ -27,7 +27,7 @@ export default function Home({ allPostsData }: IHomeProps): JSX.Element {
           Below you will see a list of the latest advisories.
         </p>
       </section>
-      <section className={utilStyles.headingMd}>…</section>
+      <section className={utilStyles.headingMd}>&nbsp;</section>
       <section className={`${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Advisories</h2>
         <AdvisoryTable items={mockAdvisories} />
