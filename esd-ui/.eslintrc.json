@@ -22,6 +22,9 @@
     ],
     "rules": {
         // not needed with next.js?
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "indent": ["warn", 2],
+        "semi": "warn",
+        "semi-spacing": "warn"
     }
 }
