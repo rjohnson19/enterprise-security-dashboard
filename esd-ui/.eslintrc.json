@@ -30,6 +30,8 @@
         "react/react-in-jsx-scope": "off",
         "indent": ["warn", 2],
         "semi": "warn",
-        "semi-spacing": "warn"
+        "semi-spacing": "warn",
+        "no-trailing-spaces": "warn",
+        "eol-last": "error"
     }
 }
