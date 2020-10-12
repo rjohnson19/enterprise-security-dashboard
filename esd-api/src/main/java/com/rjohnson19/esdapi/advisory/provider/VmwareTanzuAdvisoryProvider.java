@@ -19,6 +19,7 @@ public class VmwareTanzuAdvisoryProvider extends AbstractRemoteFeedAdvisoryProvi
     public static final String VERSIONS_AFFECTED = "versionsAffected";
     public static final String VENDOR = "vendor";
     public static final String SEVERITY = "severity";
+    public static final String ID_PREFIX = "https://pivotal.io/security/";
 
     /**
      * Constructor.
@@ -42,6 +43,7 @@ public class VmwareTanzuAdvisoryProvider extends AbstractRemoteFeedAdvisoryProvi
     @Override
     protected AdvisoryListItem toListItem(final FeedEntry feedEntry) {
         final AdvisoryListItem listItem = super.toListItem(feedEntry);
+        listItem.setId(feedEntry.getId().replace(ID_PREFIX, Constants.EMPTY_STRING).toUpperCase());
         listItem.setVendor((String) feedEntry.getFeedData().getOrDefault(VENDOR, Constants.EMPTY_STRING));
         listItem.setSeverity((String) feedEntry.getFeedData().getOrDefault(SEVERITY, Constants.EMPTY_STRING));
         listItem.setProduct(getProduct(feedEntry.getFeedData()));
