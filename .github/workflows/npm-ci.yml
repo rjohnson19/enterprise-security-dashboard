@@ -15,4 +15,4 @@ jobs:
         with:
           node-version: 12
       - run: cd esd-ui/ && npm ci
-      - run: cd esd-ui/ && npm eslint
+      - run: cd esd-ui/ && npm run eslint
