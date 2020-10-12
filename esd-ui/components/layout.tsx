@@ -3,8 +3,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Bobby Johnson';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Enterprise Security Dashboard';
 
 export default function Layout({ children, home }: ILayoutProps): JSX.Element {
   return (
@@ -13,7 +12,7 @@ export default function Layout({ children, home }: ILayoutProps): JSX.Element {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Enterprise Security Dashboard web application"
         />
         <meta
           property="og:image"
@@ -30,9 +29,8 @@ export default function Layout({ children, home }: ILayoutProps): JSX.Element {
             <img
               src="/images/profile.jpg"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
+              alt={siteTitle}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
@@ -41,7 +39,7 @@ export default function Layout({ children, home }: ILayoutProps): JSX.Element {
                 <img
                   src="/images/profile.jpg"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
+                  alt={siteTitle}
                 />
               </a>
             </Link>
