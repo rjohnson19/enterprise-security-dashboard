@@ -23,8 +23,7 @@ export function getSortedPostsData(): IPostData[] {
     // Combine the data with the id
     return {
       id,
-      date: matterResult.data['date'],
-      title: matterResult.data['title']
+      ...(matterResult.data as { date: string; title: string })
     };
   });
   // Sort posts by date
@@ -65,14 +64,13 @@ export async function getPostData(id: string): Promise<IPostData> {
   return {
     id,
     contentHtml,
-    date: matterResult.data['date'],
-    title: matterResult.data['title']
+    ...(matterResult.data as { date: string; title: string })
   };
 }
 
 export interface IPostData {
   id: string;
-  contentHtml?: string;
   date: string;
   title: string;
+  contentHtml?: string;
 }
