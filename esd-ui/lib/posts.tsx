@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import remark from 'remark';
 import html from 'remark-html';
+import { ParsedUrlQuery } from 'querystring';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -36,7 +37,7 @@ export function getSortedPostsData(): IPostData[] {
   });
 }
 
-export function getAllPostIds(): unknown {
+export function getAllPostIds(): (string | { params: ParsedUrlQuery; locale?: string; })[] {
   const fileNames = fs.readdirSync(postsDirectory);
 
   return fileNames.map(fileName => {
