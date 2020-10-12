@@ -7,7 +7,6 @@ import com.rjohnson19.esdapi.feed.dto.FeedDTO;
 import com.rjohnson19.esdapi.feed.dto.FeedEntry;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
 import java.net.URL;
@@ -20,7 +19,7 @@ import java.util.stream.Collectors;
 /**
  * Base class for advisory providers that read from a remote RSS/Atom feed.
  */
-@RequiredArgsConstructor(onConstructor_ = {@Autowired})
+@RequiredArgsConstructor
 @Slf4j
 public abstract class AbstractRemoteFeedAdvisoryProvider implements AdvisoryProvider {
     private final RSSFeedReader rssFeedReader;
