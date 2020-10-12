@@ -1,0 +1,1417 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:parsed="http://www.example.com/parsed" version="2.0">
+  <channel>
+    <title>Pivotal Security RSS Feed</title>
+    <link>https://pivotal.io/security</link>
+    <description>Feed for Pivotal CVEs</description>
+    <atom:link href="https://pivotal.io/security/parsed/rss" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <lastBuildDate>Mon, 12 Oct 2020 15:44:02 +0000</lastBuildDate>
+    <item>
+      <title>CVE-2020-5422: UAA password may appear in Operations Manager process arguments</title>
+      <link>https://pivotal.io/security/cve-2020-5422</link>
+      <parsed:severity>High</parsed:severity>
+      <parsed:vendor>VMware Tanzu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;Operations Manager, all versions prior to 2.6.27, 2.7.x versions prior to 2.7.22, 2.8.x versions prior to 2.8.12, 2.9.x versions prior to 2.9.9, and 2.10.x versions prior to 2.10.1, contained a version of BOSH System Metrics Server that exposed the UAA password as a flag to a process running on the BOSH director. It exposed the password to any user or process with access to the same VM (through ps or looking at process details).&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.6.27</parsed:version>
+            <parsed:version>2.7 versions prior to 2.7.22</parsed:version>
+            <parsed:version>2.8 versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9 versions prior to 2.9.9</parsed:version>
+            <parsed:version>2.10 versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>&lt;p&gt;Users of affected versions should apply the following mitigation or upgrade:&lt;/p&gt;</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.6.27</parsed:version>
+            <parsed:version>2.7.22</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.9</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://www.cloudfoundry.org/blog/cve-2020-5422</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-10-01: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/cve-2020-5422</guid>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4466-1: curl vulnerability</title>
+      <link>https://pivotal.io/security/usn-4466-1</link>
+      <parsed:severity>Low</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;Marc Aldorasi discovered that curl incorrectly handled the libcurl CURLOPT_CONNECT_ONLY option. This could result in data being sent to the wrong destination, possibly exposing sensitive information.&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2020-8231&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 18.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.23</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.17</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.11</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.6.x versions prior to 2.6.27</parsed:version>
+            <parsed:version>2.7.x versions prior to 2.7.23</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.13</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.10</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.x versions prior to 4.1.22</parsed:version>
+            <parsed:version>4.2.x versions prior to 4.2.17</parsed:version>
+            <parsed:version>4.3.x versions prior to 4.3.14</parsed:version>
+            <parsed:version>4.4.x versions prior to 4.4.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.23</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.17</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.11</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>Users of affected products are strongly encouraged to follow the mitigation below. The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4466-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.23</parsed:version>
+            <parsed:version>2.8.17</parsed:version>
+            <parsed:version>2.9.11</parsed:version>
+            <parsed:version>2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.6.27</parsed:version>
+            <parsed:version>2.7.23</parsed:version>
+            <parsed:version>2.8.13</parsed:version>
+            <parsed:version>2.9.10</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.22</parsed:version>
+            <parsed:version>4.2.17</parsed:version>
+            <parsed:version>4.3.14</parsed:version>
+            <parsed:version>4.4.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.23</parsed:version>
+            <parsed:version>2.8.17</parsed:version>
+            <parsed:version>2.9.11</parsed:version>
+            <parsed:version>2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8231</parsed:reference>
+        <parsed:reference>https://ubuntu.com/security/notices/USN-4466-1</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4466-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-09-24: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4466-1</guid>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4457-1: Software Properties vulnerability</title>
+      <link>https://pivotal.io/security/usn-4457-1</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;Jason A. Donenfeld discovered that Software Properties incorrectly filtered certain escape sequences when displaying PPA descriptions. If a user were tricked into adding an arbitrary PPA, a remote attacker could possibly manipulate the screen.&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2020-15709&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.23</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.17</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.11</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.6 versions prior to 2.6.27</parsed:version>
+            <parsed:version>2.7 versions prior to 2.7.23</parsed:version>
+            <parsed:version>2.8 versions prior to 2.8.13</parsed:version>
+            <parsed:version>2.9 versions prior to 2.9.10</parsed:version>
+            <parsed:version>2.10 versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.23</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.17</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.11</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>Users of affected products are strongly encouraged to follow the mitigation below. The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4457-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.23</parsed:version>
+            <parsed:version>2.8.17</parsed:version>
+            <parsed:version>2.9.11</parsed:version>
+            <parsed:version>2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.6.27</parsed:version>
+            <parsed:version>2.7.23</parsed:version>
+            <parsed:version>2.8.13</parsed:version>
+            <parsed:version>2.9.10</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.23</parsed:version>
+            <parsed:version>2.8.17</parsed:version>
+            <parsed:version>2.9.11</parsed:version>
+            <parsed:version>2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-15709</parsed:reference>
+        <parsed:reference>https://ubuntu.com/security/notices/USN-4457-1</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4457-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-09-24: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4457-1</guid>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2020-5421: RFD Protection Bypass via jsessionid</title>
+      <link>https://pivotal.io/security/cve-2020-5421</link>
+      <parsed:severity>High</parsed:severity>
+      <parsed:vendor>Spring by VMware</parsed:vendor>
+      <parsed:descriptionShort>In Spring Framework versions 5.2.0 - 5.2.8, 5.1.0 - 5.1.17, 5.0.0 - 5.0.18, 4.3.0 - 4.3.28, and older unsupported versions, the protections against RFD attacks from &lt;a href='/security/cve-2015-5211'&gt;CVE-2015-5211&lt;/a&gt; may be bypassed depending on the browser used through the use of a jsessionid path parameter.</parsed:descriptionShort>
+      <parsed:versionsAffected>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Spring Framework</parsed:product>
+          <parsed:versions>
+            <parsed:version>5.2.0 to 5.2.8</parsed:version>
+            <parsed:version>5.1.0 to 5.1.17</parsed:version>
+            <parsed:version>5.0.0 to 5.0.18</parsed:version>
+            <parsed:version>4.3.0 to 4.3.28</parsed:version>
+            <parsed:version>Older, unsupported  versions</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Spring Framework</parsed:product>
+          <parsed:versions>
+            <parsed:version>5.2.9</parsed:version>
+            <parsed:version>5.1.18</parsed:version>
+            <parsed:version>5.0.19</parsed:version>
+            <parsed:version>4.3.29</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://tanzu.vmware.com/security/cve-2015-5211</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+        <parsed:credit>This issue was identified and responsibly reported by Keitaro Yamazaki / Ierae Security.</parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-09-17: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/cve-2020-5421</guid>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2020-5420: Gorouter is vulnerable to DoS attack via invalid HTTP responses</title>
+      <link>https://pivotal.io/security/cve-2020-5420</link>
+      <parsed:severity>High</parsed:severity>
+      <parsed:vendor>VMware Tanzu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;VMware Tanzu Application Service for VMs and Isolation Segment, all versions prior to 2.7.23, 2.8.x versions prior to 2.8.17, 2.9.x versions prior to 2.9.11, and 2.10.x versions prior to 2.10.3, consume versions of Cloud Foundry Routing (Gorouter) that allow a malicious developer with &amp;quot;cf push&amp;quot; access to cause denial-of-service to the TAS cluster by pushing an app that returns specially crafted HTTP responses that crash the Gorouters.&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.23</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.17</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.11</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.23</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.17</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.11</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.23</parsed:version>
+            <parsed:version>2.8.17</parsed:version>
+            <parsed:version>2.9.11</parsed:version>
+            <parsed:version>2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.23</parsed:version>
+            <parsed:version>2.8.17</parsed:version>
+            <parsed:version>2.9.11</parsed:version>
+            <parsed:version>2.10.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://www.cloudfoundry.org/blog/cve-2020-5420</parsed:reference>
+        <parsed:reference>https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2020-5420</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-09-10: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/cve-2020-5420</guid>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2020-5416: TAS clusters with NGINX in front of them may be vulnerable to DoS</title>
+      <link>https://pivotal.io/security/cve-2020-5416</link>
+      <parsed:severity>High</parsed:severity>
+      <parsed:vendor>VMware Tanzu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;VMware Tanzu Application Service for VMs and Isolation Segment, all versions prior 2.7.22, 2.8.x versions prior to 2.8.16, 2.9.x versions prior to 2.9.10, and 2.10.x versions prior to 2.10.2, consume a version of Cloud Foundry Routing (Gorouter) that, when used in a deployment with NGINX reverse proxies in front of the Gorouters, is potentially vulnerable to denial-of-service attacks in which an unauthenticated malicious attacker can send specially-crafted HTTP requests that may cause the Gorouters to be dropped from the NGINX backend pool.&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.7.22</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.16</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.10</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.2</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.7.22</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.16</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.10</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.2</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.22</parsed:version>
+            <parsed:version>2.8.16</parsed:version>
+            <parsed:version>2.9.10</parsed:version>
+            <parsed:version>2.10.2</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.22</parsed:version>
+            <parsed:version>2.8.16</parsed:version>
+            <parsed:version>2.9.10</parsed:version>
+            <parsed:version>2.10.2</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://www.cloudfoundry.org/blog/cve-2020-5416</parsed:reference>
+        <parsed:reference>https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2020-5416</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-09-01: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/cve-2020-5416</guid>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4414-1: Linux kernel vulnerabilities</title>
+      <link>https://pivotal.io/security/usn-4414-1</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;It was discovered that the network block device (nbd) implementation in the Linux kernel did not properly check for error conditions in some situations. An attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-16089)&lt;/p&gt;&lt;p&gt;It was discovered that the btrfs file system implementation in the Linux kernel did not properly validate file system metadata in some situations. An attacker could use this to construct a malicious btrfs image that, when mounted, could cause a denial of service (system crash). (CVE-2019-19036, CVE-2019-19318, CVE-2019-19813, CVE-2019-19816)&lt;/p&gt;&lt;p&gt;It was discovered that the btrfs implementation in the Linux kernel did not properly detect that a block was marked dirty in some situations. An attacker could use this to specially craft a file system image that, when unmounted, could cause a denial of service (system crash). (CVE-2019-19377)&lt;/p&gt;&lt;p&gt;It was discovered that the kernel-&amp;gt;user space relay implementation in the Linux kernel did not properly check return values in some situations. A local attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-19462)&lt;/p&gt;&lt;p&gt;Matthew Sheets discovered that the SELinux network label handling implementation in the Linux kernel could be coerced into de-referencing a NULL pointer. A remote attacker could use this to cause a denial of service (system crash). (CVE-2020-10711)&lt;/p&gt;&lt;p&gt;It was discovered that the SCSI generic (sg) driver in the Linux kernel did not properly handle certain error conditions correctly. A local privileged attacker could use this to cause a denial of service (system crash). (CVE-2020-12770)&lt;/p&gt;&lt;p&gt;It was discovered that the USB Gadget device driver in the Linux kernel did not validate arguments passed from configfs in some situations. A local attacker could possibly use this to cause a denial of service (system crash) or possibly expose sensitive information. (CVE-2020-13143)&lt;/p&gt;&lt;p&gt;It was discovered that the efi subsystem in the Linux kernel did not handle memory allocation failures during early boot in some situations. A local attacker could possibly use this to cause a denial of service (system crash). (CVE-2019-12380)&lt;/p&gt;&lt;p&gt;It was discovered that the btrfs file system in the Linux kernel in some error conditions could report register information to the dmesg buffer. A local attacker could possibly use this to expose sensitive information. (CVE-2019-19039)&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2019-19377, CVE-2020-10711, CVE-2020-12770, CVE-2020-13143, CVE-2019-19318, CVE-2019-19816, CVE-2019-19036, CVE-2019-19462, CVE-2019-12380, CVE-2019-19039, CVE-2019-19813, CVE-2019-16089&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.15</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.9</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.11</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.7</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.15</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.9</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>Users of affected products are strongly encouraged to follow the mitigation below. The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4414-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include: </parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.15</parsed:version>
+            <parsed:version>2.9.9</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.11</parsed:version>
+            <parsed:version>2.9.7</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.15</parsed:version>
+            <parsed:version>2.9.9</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19377</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10711</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12770</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13143</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19318</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19816</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19036</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19462</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-12380</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19039</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19813</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-16089</parsed:reference>
+        <parsed:reference>https://ubuntu.com/security/notices/USN-4414-1</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4414-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-08-31: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4414-1</guid>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4402-1: curl vulnerabilities</title>
+      <link>https://pivotal.io/security/usn-4402-1</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;Marek Szlagor, Gregory Jefferis and Jeroen Ooms discovered that curl incorrectly handled certain credentials. An attacker could possibly use this issue to expose sensitive information. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-8169)&lt;/p&gt;&lt;p&gt;It was discovered that curl incorrectly handled certain parameters. An attacker could possibly use this issue to overwrite a local file. (CVE-2020-8177)&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2020-8169, CVE-2020-8177&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 14.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 18.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.15</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.9</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.11</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.7</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.x versions prior to 4.1.20</parsed:version>
+            <parsed:version>4.2.x versions prior to 4.2.15</parsed:version>
+            <parsed:version>4.3.x versions prior to 4.3.12</parsed:version>
+            <parsed:version>4.4.x versions prior to 4.4.4</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.15</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.9</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>Users of affected products are strongly encouraged to follow the mitigation below. The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4402-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.15</parsed:version>
+            <parsed:version>2.9.9</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.11</parsed:version>
+            <parsed:version>2.9.7</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.20</parsed:version>
+            <parsed:version>4.2.15</parsed:version>
+            <parsed:version>4.3.12</parsed:version>
+            <parsed:version>4.4.4</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.15</parsed:version>
+            <parsed:version>2.9.9</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8169</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-8177</parsed:reference>
+        <parsed:reference>https://usn.ubuntu.com/4402-1/</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4402-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-08-31: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4402-1</guid>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4398-1: DBus vulnerability</title>
+      <link>https://pivotal.io/security/usn-4398-1</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;Kevin Backhouse discovered that DBus incorrectly handled file descriptors. A local attacker could possibly use this issue to cause DBus to crash, resulting in a denial of service.&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2020-12049&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 18.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.15</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.9</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7 versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8 versions prior to 2.8.11</parsed:version>
+            <parsed:version>2.9 versions prior to 2.9.7</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.0.x versions prior to 4.0.13</parsed:version>
+            <parsed:version>4.1.x versions prior to 4.1.13</parsed:version>
+            <parsed:version>4.2.x versions prior to 4.2.8</parsed:version>
+            <parsed:version>4.3.x versions prior to 4.3.5</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.21</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.15</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.9</parsed:version>
+            <parsed:version>2.10.x versions prior to 2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>Users of affected products are strongly encouraged to follow the mitigation below. The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4398-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.15</parsed:version>
+            <parsed:version>2.9.9</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.11</parsed:version>
+            <parsed:version>2.9.7</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.0.13</parsed:version>
+            <parsed:version>4.1.13</parsed:version>
+            <parsed:version>4.2.8</parsed:version>
+            <parsed:version>4.3.5</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.21</parsed:version>
+            <parsed:version>2.8.15</parsed:version>
+            <parsed:version>2.9.9</parsed:version>
+            <parsed:version>2.10.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12049</parsed:reference>
+        <parsed:reference>https://usn.ubuntu.com/4398-1/</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4398-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-08-31: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4398-1</guid>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2020-5419: RabbitMQ arbitrary code execution using local binary planting</title>
+      <link>https://pivotal.io/security/cve-2020-5419</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>VMware</parsed:vendor>
+      <parsed:descriptionShort>RabbitMQ all versions prior to 3.7.28 and 3.8.x versions prior to 3.8.7 are prone to a Windows-specific binary planting security vulnerability that allows for arbitrary code execution. An attacker with write privileges to the RabbitMQ installation directory and local access on Windows could carry out a local binary hijacking (planting) attack and execute arbitrary code. VMware Tanzu RabbitMQ products are not impacted as they don&amp;#39;t use the Windows version of RabbitMQ.</parsed:descriptionShort>
+      <parsed:versionsAffected>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>RabbitMQ</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to v3.7.28</parsed:version>
+            <parsed:version>3.8.x versions prior to v3.8.7</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>RabbitMQ</parsed:product>
+          <parsed:versions>
+            <parsed:version>v3.7.28</parsed:version>
+            <parsed:version>v3.8.7</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://github.com/rabbitmq/rabbitmq-server/releases/tag/v3.8.7</parsed:reference>
+        <parsed:reference>https://tanzu.vmware.com/security/cve-2020-5419</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+        <parsed:credit>Ofir Hamam and Tomer Hadad at Ernst &amp; Young's Hacktics Advanced Security Center</parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-08-27: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/cve-2020-5419</guid>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2020-5415: Concourse's GitLab auth allows impersonation</title>
+      <link>https://pivotal.io/security/cve-2020-5415</link>
+      <parsed:severity>Critical</parsed:severity>
+      <parsed:vendor>VMware Tanzu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;Concourse for VMware Tanzu, versions prior to 6.3.1, in installations which use the GitLab auth connector, is vulnerable to identity spoofing by way of configuring a GitLab account with the same full name as another user who is granted access to a Concourse team.&lt;/p&gt;&lt;p&gt;GitLab groups do not have this vulnerability, so GitLab users may be moved into groups which are then configured in the Concourse team.&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Concourse for VMware Tanzu</parsed:product>
+          <parsed:versions>
+            <parsed:version>6.3 versions prior to 6.3.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Concourse for VMware Tanzu</parsed:product>
+          <parsed:versions>
+            <parsed:version>6.3.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://github.com/concourse/concourse/security/advisories/GHSA-627p-rr78-99rj</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+        <parsed:credit>Gregoire Detrez</parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-08-11: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/cve-2020-5415</guid>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CVE-2020-5412: Hystrix Dashboard Proxy In spring-cloud-netflix-hystrix-dashboard</title>
+      <link>https://pivotal.io/security/cve-2020-5412</link>
+      <parsed:severity>High</parsed:severity>
+      <parsed:vendor>Spring by VMware</parsed:vendor>
+      <parsed:descriptionShort>Spring Cloud Netflix, versions 2.2.x prior to 2.2.4, versions 2.1.x prior to 2.1.6, and older unsupported versions allow applications to use the Hystrix Dashboard proxy.stream endpoint to make requests to any server reachable by the server hosting the dashboard.  A malicious user, or attacker, can send a request to other servers that should not be exposed publicly.</parsed:descriptionShort>
+      <parsed:versionsAffected>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Spring Cloud Netflix</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.2.0 to 2.2.3</parsed:version>
+            <parsed:version>2.1.0 to 2.1.5</parsed:version>
+            <parsed:version>Older unsupported versions are also affected</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>&lt;p&gt;Users of affected versions should apply the mitigation below. There are no other mitigation steps necessary. Note that Hystrix Dashboard in spring-cloud-netflix should only be available on internal networks to clients that require it and it should be secured with Spring Security. This limits exposure to this vulnerability to those with internal network access and those users with proper authentication.&lt;/p&gt;</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Spring Cloud Netflix</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.2.4</parsed:version>
+            <parsed:version>2.1.6</parsed:version>
+            <parsed:version>Older versions should upgrade to a supported branch</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://docs.spring.io/spring-cloud-netflix/docs/2.2.x/reference/html/#circuit-breaker-hystrix-dashboard</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+        <parsed:credit>This issue was identified and responsibly reported by Vern (vernhk@qq.com from PingAn Galaxy Lab).</parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-08-04: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/cve-2020-5412</guid>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4394-1: SQLite vulnerabilities</title>
+      <link>https://pivotal.io/security/usn-4394-1</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;It was discovered that SQLite incorrectly handled certain corruped schemas. An attacker could possibly use this issue to cause a denial of service. This issue only affected Ubuntu 18.04 LTS. (CVE-2018-8740)&lt;/p&gt;&lt;p&gt;It was discovered that SQLite incorrectly handled certain SELECT statements. An attacker could possibly use this issue to cause a denial of service. This issue was only addressed in Ubuntu 19.10. (CVE-2019-19603)&lt;/p&gt;&lt;p&gt;It was discovered that SQLite incorrectly handled certain self-referential views. An attacker could possibly use this issue to cause a denial of service. This issue was only addressed in Ubuntu 19.10. (CVE-2019-19645)&lt;/p&gt;&lt;p&gt;Henry Liu discovered that SQLite incorrectly handled certain malformed window-function queries. An attacker could possibly use this issue to cause a denial of service. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-11655)&lt;/p&gt;&lt;p&gt;It was discovered that SQLite incorrectly handled certain string operations. An attacker could use this issue to cause SQLite to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2020-13434)&lt;/p&gt;&lt;p&gt;It was discovered that SQLite incorrectly handled certain expressions. An attacker could use this issue to cause SQLite to crash, resulting in a denial of service, or possibly execute arbitrary code. This issue only affected Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-13435)&lt;/p&gt;&lt;p&gt;It was discovered that SQLite incorrectly handled certain fts3 queries. An attacker could use this issue to cause SQLite to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2020-13630)&lt;/p&gt;&lt;p&gt;It was discovered that SQLite incorrectly handled certain virtual table names. An attacker could possibly use this issue to cause a denial of service. This issue was only addressed in Ubuntu 19.10 and Ubuntu 20.04 LTS. (CVE-2020-13631)&lt;/p&gt;&lt;p&gt;It was discovered that SQLite incorrectly handled certain fts3 queries. An attacker could use this issue to cause SQLite to crash, resulting in a denial of service, or possibly execute arbitrary code. (CVE-2020-13632)&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2018-8740, CVE-2019-19603, CVE-2019-19645, CVE-2020-11655, CVE-2020-13434, CVE-2020-13435, CVE-2020-13630, CVE-2020-13631, CVE-2020-13632&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 18.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7 versions prior to 2.7.19</parsed:version>
+            <parsed:version>2.8 versions prior to 2.8.10</parsed:version>
+            <parsed:version>2.9 versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.x versions prior to 4.1.19</parsed:version>
+            <parsed:version>4.2.x versions prior to 4.2.14</parsed:version>
+            <parsed:version>4.3.x versions prior to 4.3.11</parsed:version>
+            <parsed:version>4.4.x versions prior to 4.4.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4394-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.19</parsed:version>
+            <parsed:version>2.8.10</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.19</parsed:version>
+            <parsed:version>4.2.14</parsed:version>
+            <parsed:version>4.3.11</parsed:version>
+            <parsed:version>4.4.3</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8740</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19603</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-19645</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-11655</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13434</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13435</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13630</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13631</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-13632</parsed:reference>
+        <parsed:reference>https://usn.ubuntu.com/4394-1/</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4394-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-06-10: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4394-1</guid>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4390-1: Linux kernel vulnerabilities</title>
+      <link>https://pivotal.io/security/usn-4390-1</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;It was discovered that the F2FS file system implementation in the Linux kernel did not properly perform bounds checking on xattrs in some situations. A local attacker could possibly use this to expose sensitive information (kernel memory). (CVE-2020-0067)&lt;/p&gt;&lt;p&gt;It was discovered that memory contents previously stored in microarchitectural special registers after RDRAND, RDSEED, and SGX EGETKEY read operations on Intel client and Xeon E3 processors may be briefly exposed to processes on the same or different processor cores. A local attacker could use this to expose sensitive information. (CVE-2020-0543)&lt;/p&gt;&lt;p&gt;Piotr Krysiuk discovered that race conditions existed in the file system implementation in the Linux kernel. A local attacker could use this to cause a denial of service (system crash). (CVE-2020-12114)&lt;/p&gt;&lt;p&gt;It was discovered that the USB susbsystems scatter-gather implementation in the Linux kernel did not properly take data references in some situations, leading to a use-after-free. A physically proximate attacker could use this to cause a denial of service (system crash) or possibly execute arbitrary code. (CVE-2020-12464)&lt;/p&gt;&lt;p&gt;Xiumei Mu discovered that the IPSec implementation in the Linux kernel did not properly encrypt IPv6 traffic in some situations. An attacker could use this to expose sensitive information. (CVE-2020-1749)&lt;/p&gt;&lt;p&gt;Dmitry Vyukov discovered that the SELinux netlink security hook in the Linux kernel did not validate messages in some situations. A privileged attacker could use this to bypass SELinux netlink restrictions. (CVE-2020-10751)&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2020-0543, CVE-2020-12114, CVE-2020-10751, CVE-2020-12464, CVE-2020-1749, CVE-2020-0067&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7 versions prior to 2.7.19</parsed:version>
+            <parsed:version>2.8 versions prior to 2.8.10</parsed:version>
+            <parsed:version>2.9 versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4390-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.19</parsed:version>
+            <parsed:version>2.8.10</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0543</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12114</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-10751</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-12464</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-1749</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0067</parsed:reference>
+        <parsed:reference>https://usn.ubuntu.com/4390-1/</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4390-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-06-10: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4390-1</guid>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4385-2: Intel Microcode regression</title>
+      <link>https://pivotal.io/security/usn-4385-2</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;USN-4385-1 provided updated Intel Processor Microcode. Unfortunately, that update prevented certain processors in the Intel Skylake family (06_4EH) from booting successfully. Additonally, on Ubuntu 20.04 LTS, late loading of microcode was enabled, which could lead to system instability. This update reverts the microcode update for the Skylake processor family and disables the late loading option on Ubuntu 20.04 LTS.&lt;/p&gt;&lt;p&gt;Please note that the dis_ucode_ldr kernel command line option can be added in the boot menu to disable microcode loading for system recovery.&lt;/p&gt;&lt;p&gt;We apologize for the inconvenience.&lt;/p&gt;&lt;p&gt;Original advisory details:&lt;/p&gt;&lt;p&gt;It was discovered that memory contents previously stored in microarchitectural special registers after RDRAND, RDSEED, and SGX EGETKEY read operations on Intel client and Xeon E3 processors may be briefly exposed to processes on the same or different processor cores. A local attacker could use this to expose sensitive information. (CVE-2020-0543)&lt;/p&gt;&lt;p&gt;It was discovered that on some Intel processors, partial data values previously read from a vector register on a physical core may be propagated into unused portions of the store buffer. A local attacker could possible use this to expose sensitive information. (CVE-2020-0548)&lt;/p&gt;&lt;p&gt;It was discovered that on some Intel processors, data from the most recently evicted modified L1 data cache (L1D) line may be propagated into an unused (invalid) L1D fill buffer. A local attacker could possibly use this to expose sensitive information. (CVE-2020-0549)&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2020-0543, CVE-2020-0548, CVE-2020-0549&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 14.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7 versions prior to 2.7.19</parsed:version>
+            <parsed:version>2.8 versions prior to 2.8.10</parsed:version>
+            <parsed:version>2.9 versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4385-2/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.19</parsed:version>
+            <parsed:version>2.8.10</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0543</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0548</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0549</parsed:reference>
+        <parsed:reference>https://usn.ubuntu.com/4385-2/</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4385-2</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-06-10: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4385-2</guid>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4385-1: Intel Microcode vulnerabilities</title>
+      <link>https://pivotal.io/security/usn-4385-1</link>
+      <parsed:severity>Medium</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;It was discovered that memory contents previously stored in microarchitectural special registers after RDRAND, RDSEED, and SGX EGETKEY read operations on Intel client and Xeon E3 processors may be briefly exposed to processes on the same or different processor cores. A local attacker could use this to expose sensitive information. (CVE-2020-0543)&lt;/p&gt;&lt;p&gt;It was discovered that on some Intel processors, partial data values previously read from a vector register on a physical core may be propagated into unused portions of the store buffer. A local attacker could possible use this to expose sensitive information. (CVE-2020-0548)&lt;/p&gt;&lt;p&gt;It was discovered that on some Intel processors, data from the most recently evicted modified L1 data cache (L1D) line may be propagated into an unused (invalid) L1D fill buffer. A local attacker could possibly use this to expose sensitive information. (CVE-2020-0549)&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2020-0543, CVE-2020-0548, CVE-2020-0549&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 14.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7 versions prior to 2.7.19</parsed:version>
+            <parsed:version>2.8 versions prior to 2.8.10</parsed:version>
+            <parsed:version>2.9 versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4385-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.19</parsed:version>
+            <parsed:version>2.8.10</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0543</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0548</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2020-0549</parsed:reference>
+        <parsed:reference>https://usn.ubuntu.com/4385-1/</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4385-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-06-09: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4385-1</guid>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4377-1: ca-certificates update</title>
+      <link>https://pivotal.io/security/usn-4377-1</link>
+      <parsed:severity>Unknown</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;The ca-certificates package contained an expired CA certificate that caused connectivity issues. This update removes the &amp;quot;AddTrust External Root&amp;quot; CA.&lt;/p&gt;&lt;p&gt;In addition, on Ubuntu 16.04 LTS and Ubuntu 18.04 LTS, this update refreshes the included certificates to those contained in the 20190110 package.&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-BOGUS&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 18.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7 versions prior to 2.7.19</parsed:version>
+            <parsed:version>2.8 versions prior to 2.8.10</parsed:version>
+            <parsed:version>2.9 versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.x versions prior to 4.1.18</parsed:version>
+            <parsed:version>4.2.x versions prior to 4.2.13</parsed:version>
+            <parsed:version>4.3.x versions prior to 4.3.10</parsed:version>
+            <parsed:version>4.4.x versions prior to 4.4.2</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.0.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4377-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.19</parsed:version>
+            <parsed:version>2.8.10</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.18</parsed:version>
+            <parsed:version>4.2.13</parsed:version>
+            <parsed:version>4.3.10</parsed:version>
+            <parsed:version>4.4.2</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.0.1</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>http://people.ubuntu.com/~ubuntu-security/cve/CVE-BOGUS</parsed:reference>
+        <parsed:reference>https://usn.ubuntu.com/4377-1/</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4377-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-06-01: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4377-1</guid>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>USN-4376-1: OpenSSL vulnerabilities</title>
+      <link>https://pivotal.io/security/usn-4376-1</link>
+      <parsed:severity>Low</parsed:severity>
+      <parsed:vendor>Canonical Ubuntu</parsed:vendor>
+      <parsed:descriptionShort>&lt;p&gt;Cesar Pereida Garcia, Sohaib ul Hassan, Nicola Tuveri, Iaroslav Gridin, Alejandro Cabrera Aldaya, and Billy Brumley discovered that OpenSSL incorrectly handled ECDSA signatures. An attacker could possibly use this issue to perform a timing side-channel attack and recover private ECDSA keys. (CVE-2019-1547)&lt;/p&gt;&lt;p&gt;Matt Caswell discovered that OpenSSL incorrectly handled the random number generator (RNG). This may result in applications that use the fork() system call sharing the same RNG state between the parent and the child, contrary to expectations. This issue only affected Ubuntu 18.04 LTS and Ubuntu 19.10. (CVE-2019-1549)&lt;/p&gt;&lt;p&gt;Guido Vranken discovered that OpenSSL incorrectly performed the x86_64 Montgomery squaring procedure. While unlikely, a remote attacker could possibly use this issue to recover private keys. (CVE-2019-1551)&lt;/p&gt;&lt;p&gt;Bernd Edlinger discovered that OpenSSL incorrectly handled certain decryption functions. In certain scenarios, a remote attacker could possibly use this issue to perform a padding oracle attack and decrypt traffic. (CVE-2019-1563)&lt;/p&gt;&lt;p&gt;CVEs contained in this USN include: CVE-2019-1547, CVE-2019-1549, CVE-2019-1551, CVE-2019-1563&lt;/p&gt;</parsed:descriptionShort>
+      <parsed:versionsAffected>
+        <parsed:version>Canonical Ubuntu 16.04</parsed:version>
+        <parsed:version>Canonical Ubuntu 18.04</parsed:version>
+      </parsed:versionsAffected>
+      <parsed:affectedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.19</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.10</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.4</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.x versions prior to 4.1.18</parsed:version>
+            <parsed:version>4.2.x versions prior to 4.2.13</parsed:version>
+            <parsed:version>4.3.x versions prior to 4.3.9</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>All versions prior to 2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.x versions prior to 2.7.18</parsed:version>
+            <parsed:version>2.8.x versions prior to 2.8.12</parsed:version>
+            <parsed:version>2.9.x versions prior to 2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:affectedProducts>
+      <parsed:fixedProductsIntro>The Cloud Foundry security team recommends upgrading the affected OSS components &lt;a href="https://www.cloudfoundry.org/blog/usn-4376-1/" target="_blank"&gt;listed here&lt;/a&gt; if applicable. Upgrade VMware Tanzu products that use earlier versions of CF components to new Tanzu releases using new versions linked above. On the &lt;a href="https://network.pivotal.io/" target="_blank"&gt;Tanzu Network&lt;/a&gt; product page for each release, check the Depends On section and/or Release Notes for this information. Releases that have fixed this issue include:</parsed:fixedProductsIntro>
+      <parsed:fixedProducts>
+        <parsed:product>
+          <parsed:product>Isolation Segment</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Operations Manager</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.19</parsed:version>
+            <parsed:version>2.8.10</parsed:version>
+            <parsed:version>2.9.4</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Platform Automation Toolkit</parsed:product>
+          <parsed:versions>
+            <parsed:version>4.1.18</parsed:version>
+            <parsed:version>4.2.13</parsed:version>
+            <parsed:version>4.3.9</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>Tanzu Greenplum for Kubernetes</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.0.0</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+        <parsed:product>
+          <parsed:product>VMware Tanzu Application Service for VMs</parsed:product>
+          <parsed:versions>
+            <parsed:version>2.7.18</parsed:version>
+            <parsed:version>2.8.12</parsed:version>
+            <parsed:version>2.9.6</parsed:version>
+          </parsed:versions>
+        </parsed:product>
+      </parsed:fixedProducts>
+      <parsed:references>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1547</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1549</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1551</parsed:reference>
+        <parsed:reference>https://people.canonical.com/~ubuntu-security/cve/CVE-2019-1563</parsed:reference>
+        <parsed:reference>https://usn.ubuntu.com/4376-1/</parsed:reference>
+        <parsed:reference>https://cloudfoundry.org/blog/usn-4376-1</parsed:reference>
+      </parsed:references>
+      <parsed:credit>
+      </parsed:credit>
+      <parsed:history>
+        <parsed:history>2020-05-28: Initial vulnerability report published.</parsed:history>
+      </parsed:history>
+      <guid isPermaLink="true">https://pivotal.io/security/usn-4376-1</guid>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
