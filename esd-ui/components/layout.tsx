@@ -1,12 +1,12 @@
-import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from 'next/head';
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
 
-const name = 'Bobby Johnson'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Bobby Johnson';
+export const siteTitle = 'Next.js Sample Website';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: ILayoutProps): JSX.Element {
   return (
     <div className={styles.container}>
       <Head>
@@ -62,5 +62,10 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
+}
+
+export interface ILayoutProps {
+  children: React.ReactNode;
+  home?: boolean;
 }
